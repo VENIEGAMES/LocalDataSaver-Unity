@@ -27,7 +27,7 @@ public static class LocalDataSaver
 			}
 			catch
 			{
-				Debug.Log(string.Format("{0}の定義が変更された可能性があるため保存情報を削除します。", (GetSaveDataPath<T>())));
+				Debug.Log(string.Format("{0}の定義が変更された可能性があるため読み込めませんでした。", (GetSaveDataPath<T>())));
 			}
 		}
 		return deserializedObject;
